@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <div className="nav">
-      <div className="bg-blue-900">
+      <div className="bg-blue-900 border-b-2 border-white">
         <div className="container mx-auto py-4">
           <nav className='items-center px-4'>
             {/* Top Nav */}
