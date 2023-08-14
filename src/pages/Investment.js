@@ -2,8 +2,8 @@ import React from 'react'
 
 const Investment = () => {
   return (
-    <div>
-      Investment
+    <div className=' '>
+      Investment  
     </div>
   )
 }
