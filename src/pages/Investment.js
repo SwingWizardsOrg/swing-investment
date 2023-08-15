@@ -1,32 +1,33 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { easeIn, motion } from "framer-motion"
 
 
 import Welcome from '../components/Investment/Welcome'
+import Exemporaly from '../components/Investment/Exemporaly'
 
 const Investment = () => {
   const [addmargin, setaddmargin] = useState(false)
 
-  const ScrollLength=window.screenY
+  const ScrollLength = window.screenY
 
-  useEffect(()=>{
+  useEffect(() => {
     // get scroll
-    if(ScrollLength>40){
+    if (ScrollLength > 40) {
       setaddmargin(true)
 
     }
     console.log(ScrollLength);
     // add listener
-   
-    
-    
 
 
 
-  },[ScrollLength, addmargin])
-  console.log("matgin",addmargin);
+
+
+
+  }, [ScrollLength, addmargin])
+  console.log("matgin", addmargin);
   return (
-    <motion.div className='w-full h-full bg-[#0D0D0D] '
+    <motion.div className='w-full h-full bg-[#0D0D0D] overflow-hidden '
       initial={{
         opacity: 0,
 
@@ -40,10 +41,13 @@ const Investment = () => {
         }
       }}
     >
-      <div className=' ml-5 xl:ml-10  '>
+      <div className=' md:ml-5 xl:ml-10 ml-2 '>
 
 
         <Welcome />
+      </div>
+      <div>
+        <Exemporaly />
       </div>
 
 
