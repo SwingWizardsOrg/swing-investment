@@ -9,7 +9,7 @@ import { Routes,Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
+    <div className='bg-[#0D0D0D] w-full h-full'>
       <Header />
       <Nav/>
       <Routes>
