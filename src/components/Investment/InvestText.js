@@ -17,6 +17,10 @@ const InvestText = () => {
                         <span>wing</span>
                     </span>
 
+
+
+                    
+
                     <span>
                         <span className="text-[#002060]">W</span>
                         <span>iz</span>
