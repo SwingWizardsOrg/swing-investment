@@ -3,7 +3,8 @@ import { easeIn, motion } from "framer-motion"
 
 
 import Welcome from '../components/Investment/Welcome'
-import Exemporaly from '../components/Investment/Exemporaly'
+
+import Exemporaly from '../components/Exempo/Exemporaly'
 
 const Investment = () => {
   const [addmargin, setaddmargin] = useState(false)
