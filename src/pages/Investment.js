@@ -5,6 +5,10 @@ import { easeIn, motion } from "framer-motion"
 import Welcome from '../components/Investment/Welcome'
 
 import Exemporaly from '../components/Exempo/Exemporaly'
+import LoginPage from '../components/Login/LoginPage'
+
+
+
 
 const Investment = () => {
   const [addmargin, setaddmargin] = useState(false)
@@ -28,6 +32,7 @@ const Investment = () => {
   }, [ScrollLength, addmargin])
   console.log("matgin", addmargin);
   return (
+ 
     <motion.div className='w-full h-full bg-[#0D0D0D] overflow-hidden '
       initial={{
         opacity: 0,
@@ -50,6 +55,11 @@ const Investment = () => {
       <div>
         <Exemporaly />
       </div>
+      <div>
+        
+        <LoginPage/>
+      </div>
+
 
 
 
@@ -59,6 +69,7 @@ const Investment = () => {
 
 
     </motion.div>
+    
   )
 }
 

@@ -6,26 +6,26 @@ import Database from "../../images/database.png"
 
 
 
-export const ExmpCardData=[
+export const ExmpCardData = [
     {
-        image:Dollar,
-Title:`REALTIME DATA FEED `,
+        image: Dollar,
+        Title: `REALTIME DATA FEED `,
 
-        Description:"WITHDRAW AND DEPOSIT AT WILL"
+        Description: "WITHDRAW AND DEPOSIT AT WILL"
 
     },
     {
 
-        image:Search,
-    Title:`TRANSPARENCY ${"\u00A0".repeat(5)}`,
-        Description:`HISTORICAL DATA ANALYTICS  ${"\u00A0".repeat(5)}`
+        image: Search,
+        Title: `TRANSPARENCY ${"\u00A0".repeat(5)}`,
+        Description: `HISTORICAL DATA ANALYTICS  ${"\u00A0".repeat(5)}`
 
     },
     {
 
-        image:Database,
-Title:`REALTIME DATA FEED `,
-Description:"KNOW EVERY MOVEMENT OF RUNNING TRADE"
+        image: Database,
+        Title: `REALTIME DATA FEED `,
+        Description: "KNOW EVERY MOVEMENT OF RUNNING TRADE"
 
     }
 ]
