@@ -23,7 +23,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
 
-
+// check inputs privide error messge
 const schema = yup.object().shape({
     username: yup.string().required('Username is required'),
     password: yup.string().required('Password is required'),
@@ -44,11 +44,17 @@ const LoginForm = () => {
         }
     });
 
+
+
+    // post the details to the server
     const onSubmit = (data) => {
         console.log(data);
+
+
     };
 
     return (
+        // form with react hook form for validation of inputs,manage states and errors 
         <FormProvider {...form}>
             <div className='group'>
                 <Form >
@@ -82,9 +88,8 @@ const LoginForm = () => {
                             )}
                         />
                         <div className=' w-full  flex justify-center'>
-                            <Button type="submit" className=" group-hover:bg-gradient-to-r from-blue-600/80 transition-all delay-300 duration-500">Log In</Button>
+                            <Button disabled={form.formState.isLoading} type="submit" className=" group-hover:bg-gradient-to-r from-blue-600/80 transition-all delay-300 duration-500">Log In</Button>
                         </div>
-
                     </form>
                 </Form>
             </div>

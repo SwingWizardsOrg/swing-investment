@@ -8,6 +8,10 @@ import Exemporaly from '../components/Exempo/Exemporaly'
 import LoginPage from '../components/Login/LoginPage'
 
 
+import Card4Cards from '../components/Card4Page/Card4Cards'
+import PlayStore from '../components/DownloadApp/PlayStore'
+
+
 
 
 const Investment = () => {
@@ -32,7 +36,7 @@ const Investment = () => {
   }, [ScrollLength, addmargin])
   console.log("matgin", addmargin);
   return (
- 
+
     <motion.div className='w-full h-full bg-[#0D0D0D] overflow-hidden '
       initial={{
         opacity: 0,
@@ -52,12 +56,18 @@ const Investment = () => {
 
         <Welcome />
       </div>
-      <div>
+      <div className=' mx-4'>
         <Exemporaly />
       </div>
       <div>
-        
-        <LoginPage/>
+
+        <LoginPage />
+      </div>
+      <div className=' mt-[159px]'>
+        <Card4Cards />
+      </div>
+      <div>
+        <PlayStore/>
       </div>
 
 
@@ -69,7 +79,7 @@ const Investment = () => {
 
 
     </motion.div>
-    
+
   )
 }
 

@@ -21,11 +21,12 @@ const LoginCard = () => {
       </div>
       <div>
         <div className=' flex  justify-center items-center'>
-          <h1 className=' text-[15px] tracking-wide font-thin text-white'>Don't have account</h1>
+          <h1 className=' text-[15px] tracking-wide font-thin text-white'>Don't have account </h1>
         </div>
       </div>
     
         <div className=' flex  justify-center items-center rounded-md p-0 cursor-pointer'>
+          {/* a module of button  with variant, size ,... */}
           <Button className=' rounded-md text-sm font-thin text-white bg-[#991B1B] '   >Sign Up</Button>
 
         </div>

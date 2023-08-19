@@ -1,7 +1,7 @@
 
 
 
-
+// mpesa logo img
 import React from 'react'
 import MpesaLogo from "../../images/Mpesalogo.png"
 
