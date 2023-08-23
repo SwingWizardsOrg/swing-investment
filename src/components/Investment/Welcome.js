@@ -9,26 +9,23 @@ const Welcome = () => {
   return (
     <div className="w-full h-screen  flex justify-start relative bg-slate-900/60">
       {/* background image */}
-      <motion.div className=" bg-[#0D0D0D] absolute transition duration-300 delay-300  flex md:justify-center md:items-center w-full h-[100vh] z-40 "
-      
-      initial={{
-        opacity: 0,
-        x: -100,
-       
-      }}
-      animate={{
-        opacity: 1,
-      
-        x: 0,
-       
-      }}
-      transition={{
-        duration: 0.5,
-        delay: 1.5,
-        easings: "easeIn",
-        smooth: "true",
+      <motion.div
+        className=" bg-[#0D0D0D] absolute transition duration-300 delay-300  flex md:justify-center md:items-center w-full h-[100vh] z-40 "
+        initial={{
+          opacity: 0,
+          x: -100,
+        }}
+        animate={{
+          opacity: 1,
 
-      }}
+          x: 0,
+        }}
+        transition={{
+          duration: 0.5,
+          delay: 1.5,
+          easings: "easeIn",
+          smooth: "true",
+        }}
       >
         <div className=" bg-blue-500/40 opacity-5 ">
           <img

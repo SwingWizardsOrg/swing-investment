@@ -51,7 +51,7 @@ const Investment = () => {
         }
       }}
     >
-      <div className=' md:ml-5 xl:ml-10 ml-2  w-full '>
+      <div className=' md:ml-5 xl:ml-10 ml-2  w-full  mt-100vh]'>
 
 
         <Welcome />
