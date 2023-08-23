@@ -36,8 +36,8 @@ const Investment = () => {
   }, [ScrollLength, addmargin])
   console.log("matgin", addmargin);
   return (
-
-    <motion.div className='w-full h-full bg-[#0D0D0D] overflow-hidden '
+    // bg-[#0D0D0D]/500 
+    <motion.div className='w-full h-full bg-[#0D0D0D]  overflow-hidden '
       initial={{
         opacity: 0,
 
@@ -51,7 +51,7 @@ const Investment = () => {
         }
       }}
     >
-      <div className=' md:ml-5 xl:ml-10 ml-2 '>
+      <div className=' md:ml-5 xl:ml-10 ml-2  w-full '>
 
 
         <Welcome />
@@ -67,7 +67,7 @@ const Investment = () => {
         <Card4Cards />
       </div>
       <div>
-        <PlayStore/>
+        <PlayStore />
       </div>
 
 
