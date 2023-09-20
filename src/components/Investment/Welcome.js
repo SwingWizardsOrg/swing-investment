@@ -1,14 +1,15 @@
-import React from "react";
-import InvestText from "./InvestText";
-import InvestDescription from "./InvestDescription";
-import SignUp from "./SignUp";
-import image from "../../images/RiskManage.png";
 import { motion } from "framer-motion";
+import React from "react";
+import image from "../../images/RiskManage.png";
+import InvestDescription from "./InvestDescription";
+import InvestText from "./InvestText";
+import SignUp from "./SignUp";
 
 const Welcome = () => {
   return (
     <div className="w-full h-screen  flex justify-start relative bg-slate-900/60">
       {/* background image */}
+     
       <motion.div
         className=" bg-[#0D0D0D] absolute transition duration-300 delay-300  flex md:justify-center md:items-center w-full h-[100vh] z-40 "
         initial={{

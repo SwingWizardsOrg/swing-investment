@@ -17,6 +17,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.4",
+    "react-hot-toast": "^2.4.1",
+    "react-player": "^2.13.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "tailwind-merge": "^1.14.0",
