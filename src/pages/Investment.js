@@ -10,6 +10,7 @@ import LoginPage from '../components/Login/LoginPage'
 
 import Card4Cards from '../components/Card4Page/Card4Cards'
 import PlayStore from '../components/DownloadApp/PlayStore'
+import MainCard6 from '../components/Card6/MainCard6'
 
 
 
@@ -68,6 +69,9 @@ const Investment = () => {
       </div>
       <div>
         <PlayStore />
+      </div>
+      <div>
+        <MainCard6/>
       </div>
 
 

@@ -5,5 +5,14 @@
     "conventionalCommits.scopes": [
         "app ad applink",
         "exporaray card"
+    ],
+    "spellright.language": [
+        "en-US-10-1."
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "javascript"
     ]
 }
