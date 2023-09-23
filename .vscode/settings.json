@@ -3,6 +3,7 @@
         "appimage"
     ],
     "conventionalCommits.scopes": [
-        "app ad applink"
+        "app ad applink",
+        "exporaray card"
     ]
 }

@@ -8,7 +8,7 @@ import { Button } from '../Models/button'
 
 const Card4Cards = () => {
   return (
-    <div className=' w-full  h-screen overflow-y-scroll  top-10  '>
+    <div className=' w-full  h-screen overflow-y-scroll   '>
       <div className=' '>
         <Card4/>
       </div>

@@ -7,7 +7,7 @@ import SignUp from "./SignUp";
 
 const Welcome = () => {
   return (
-    <div className="w-full h-screen  flex justify-start relative bg-slate-900/60">
+    <div className="w-full h-screen mt-20  flex justify-start relative bg-slate-900/60">
       {/* background image */}
      
       <motion.div

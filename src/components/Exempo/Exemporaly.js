@@ -11,7 +11,7 @@ import { ExmpCardData } from '../lib/ExempCardData'
 
 const Exemporaly = () => {
   return (
-    <div className=' w-full h-[100vh]  overflow-x-scroll'>
+    <div className=' w-full h-[100vh]  overflow-x-scroll mt-20'>
       <div className=' h-full flex flex-col'>
         <div className=' w-full   items-center z-40   ' >
           <HeadTitle title=" Exemporary" />

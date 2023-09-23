@@ -59,11 +59,11 @@ const Investment = () => {
       <div className=' mx-4'>
         <Exemporaly />
       </div>
-      <div>
+      <div className=' mb-20'>
 
         <LoginPage />
       </div>
-      <div className=' mt-[159px]'>
+      <div className=' mt-[180px] '>
         <Card4Cards />
       </div>
       <div>

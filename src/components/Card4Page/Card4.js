@@ -10,7 +10,7 @@ import ExmpCard4 from './ExmpCard4'
 
 const Card4 = () => {
     return (
-        <div >
+        <div className=' ' >
             <div className='  mt-[40px] md:mt-[100px] flex justify-center items-center  mx-auto w-full     '>
                 <div className='   flex justify-center items-center '>
                     <div className=' grid xl:grid-cols-4 md:grid-cols-2 gap-5 md:gap-10   xl:gap-10 place-content-center transition-all duration-200 delay-200  '>
