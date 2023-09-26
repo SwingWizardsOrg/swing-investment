@@ -7,9 +7,12 @@ import Account from './pages/Account'
 import Home from './pages/Home'
 import { Routes,Route } from 'react-router-dom'
 
+import {Toaster} from 'react-hot-toast'
+
 function App() {
   return (
-    <div>
+    <div className='bg-[#0D0D0D] w-full h-full'>
+       <Toaster/>
       <Header />
       <Nav/>
       <Routes>

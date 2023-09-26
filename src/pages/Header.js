@@ -3,7 +3,7 @@ import logo from '../images/logo.png'
 
 const Header = () => {
   return (
-    <div>
+    <div className=' w-full overflow-hidden'>
       <header className="container mx-auto p-4">
         <a href="/" className="flex items-center">
           <div>
