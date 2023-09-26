@@ -4,7 +4,7 @@ const InvestText = () => {
   return (
     <div className="flex flex-col mt-0 w-full mb-10    ">
       <h1 className="flex md:justify-start md:items-start justify-center items-center flex-col text-[#ffff] font-extrabold text-start gap-4">
-        <span className="gap-2 flex-wrap flex text-[40px] md:text-[60px] xl:text-9xl font-extrabold text-center mb-1 transition-all duration-300 delay-300  ">
+        <span className="gap-2 flex-wrap flex text-[10px] md:text-[60px] xl:text-9xl font-extrabold text-center mb-1 transition-all duration-300 delay-300  ">
           <span>The</span>
           <span>
             <span className="text-[#002060]">S</span>
