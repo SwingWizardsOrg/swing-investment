@@ -1,6 +1,37 @@
 import React,{ useState } from 'react'
+import {  useLocation } from 'react-router-dom';
+import { cn } from '../components/lib/utils';
+import {
+  motion,
+  useMotionValue,
+  useMotionValueEvent,
+  useScroll,
+} from "framer-motion";
+
+import Header from './Header'
+
 
 const Nav = () => {
+  const [isHidden, setIsHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latestScrollY) => {
+    console.log(latestScrollY);
+    // pravious
+    const pravious = scrollY.getPrevious();
+
+    console.log("previous", pravious);
+    console.log("latest", latestScrollY);
+
+    if (latestScrollY > pravious && latestScrollY > 100) {
+      setIsHidden(true);
+    } else {
+      setIsHidden(false);
+    }
+  });
+
+  const location = useLocation();
+  console.log("location",location.pathname);
 
   const [navIsShown, setnavIsShown] = useState(false);
   const toggleNavIsShown = () => {
@@ -8,7 +39,13 @@ const Nav = () => {
   };
 
   return (
-    <div className="nav w-full min-w-screen">
+    <motion.div  variants={{
+      hidden: { opacity: 0, y: -100 ,display:"none"},
+      visible: { opacity: 1, y:0 },
+    }}
+    animate={isHidden ? "hidden" : "visible"}
+    transition={{ duration: 0.35, ease: "easeInOut" }} className="nav w-full min-w-screen fixed  top-0 z-[1000]">
+       <Header />
       <div className="bg-blue-900 border-b-2 border-white">
         <div className="container mx-auto py-4">
           <nav className='items-center px-4'>
@@ -16,19 +53,19 @@ const Nav = () => {
             <div>
               <ul className='hidden md:flex text-xl p-2'>
                 <li>
-                  <a href="/" className="hover:text-[#8e91ac] px-3 py-2">Welcome</a>
+                  <a href="/" className={cn("hover:text-[#8e91ac] px-3 py-1 rounded-md",location.pathname ==='/'? "bg-black":"")}>Welcome</a>
                 </li>
                 <li>
-                  <a href="/madesimple" className="hover:text-[#8e91ac] px-3 py-2">Made Simple</a>
+                  <a href="/madesimple"  className={cn("hover:text-[#8e91ac] px-3 py-1 rounded-md",location.pathname ==='/madesimple'? "bg-black":"")}>Made Simple</a>
                 </li>
                 <li>
-                  <a href="/investment" className="hover:text-[#8e91ac] px-3 py-2">Investment</a>
+                  <a href="/investment" className={cn("hover:text-[#8e91ac] px-3 py-1 rounded-md",location.pathname ==='/investment'? "bg-black":"")}>Investment</a>
                 </li>
                 <li>
-                  <a href="/stats" className="hover:text-[#8e91ac] px-3 py-2">Stats</a>
+                  <a href="/stats" className={cn("hover:text-[#8e91ac] px-3 py-1 rounded-md",location.pathname ==='/stats'? "bg-black":"")}>Stats</a>
                 </li>
                 <li>
-                  <a href="/account" className="hover:text-[#8e91ac] px-3 py-2">Account</a>
+                  <a href="/account" className={cn("hover:text-[#8e91ac] px-3 py-1 rounded-md",location.pathname ==='/account'? "bg-black":"")}>Account</a>
                 </li>
               </ul>
             </div>
@@ -70,7 +107,7 @@ const Nav = () => {
           </nav>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

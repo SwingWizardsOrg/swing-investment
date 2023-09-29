@@ -3,14 +3,14 @@ import logo from '../images/logo.png'
 
 const Header = () => {
   return (
-    <div className=' w-full overflow-hidden'>
+    <div className=' w-full overflow-hidden bg-black'>
       <header className="container mx-auto p-4">
         <a href="/" className="flex items-center">
           <div>
-            <img width={100} height={100} src={logo} alt="logo" />
+            <img width={100} height={100} src={logo} className=' bg-black' alt="logo" />
           </div>
           <div>
-            <h2><b>THE WIZARDS</b></h2>
+            <h2 className=''><b>THE WIZARDS</b></h2>
           </div>
         </a>
       </header>

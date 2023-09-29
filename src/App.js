@@ -13,7 +13,7 @@ function App() {
   return (
     <div className='bg-[#0D0D0D] w-full h-full'>
        <Toaster/>
-      <Header />
+     
       <Nav/>
       <Routes>
         <Route exact path="/" element={<Home/>} />
