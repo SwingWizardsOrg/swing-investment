@@ -48,7 +48,7 @@ const Welcome = () => {
             </div>
           </div>
 
-          <div className=" md:mt-16 mt-[50px]    flex  justify-center items-center   ">
+          <div className=" mt-20 bottom-0 xl:mt-52  md:w-full  p-o ml-0  flex md:justify-start  w-full justify-center   items-center   ">
             <SignUp />
           </div>
         </div>
@@ -60,7 +60,7 @@ const Welcome = () => {
             <img
               src={image}
               alt="Investment"
-              className="xl:w-[500px] xl:h-[500px] mx-10 object-center object-contain "
+              className="object-fill xl:w-[600px] xl:h-[900px] mx-10 object-center  "
             />
           </div>
         </div>
